@@ -14,6 +14,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const navLinks = document.querySelector('.nav-links');
+  if (mobileMenuBtn && navLinks) {
+    mobileMenuBtn.addEventListener('click', () => {
+      if (navLinks.style.display === 'flex') {
+        navLinks.style.display = 'none';
+      } else {
+        navLinks.style.display = 'flex';
+        navLinks.style.flexDirection = 'column';
+        navLinks.style.position = 'absolute';
+        navLinks.style.top = '100%';
+        navLinks.style.left = '0';
+        navLinks.style.right = '0';
+        navLinks.style.background = '#0A0F1F';
+        navLinks.style.padding = '20px';
+        navLinks.style.borderBottom = '1px solid rgba(255,255,255,0.1)';
+      }
+    });
+  }
+
   // 2. Interactive Platform Tab Switcher (Residente, Garita Tablet, Admin Web)
   const tabButtons = document.querySelectorAll('.tab-btn');
   const tabContents = document.querySelectorAll('.tab-content');
@@ -57,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dollars = Math.round(count * 14.5);
     recoveryMetric.textContent = `+$${dollars.toLocaleString()} USD`;
 
-    // Security check time reduction: from 4 minutes to 8 seconds
+    // Security check time reduction
     speedMetric.textContent = `96.5% más rápido`;
   }
 
@@ -69,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 4. Garita Overstay Dynamic Simulation Clock
   const overstayTimer = document.getElementById('overstayTimer');
   if (overstayTimer) {
-    let seconds = 8311; // 02:18:31 in seconds
+    let seconds = 6135; // 01:42:15 in seconds
     setInterval(() => {
       seconds++;
       const hrs = String(Math.floor(seconds / 3600)).padStart(2, '0');
@@ -95,7 +116,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 6. Interactive Demo Request Modal & WhatsApp Integration
+  // 6. In-Page Demo Request Form & WhatsApp Integration
+  const inpageDemoForm = document.getElementById('inpageDemoForm');
+  if (inpageDemoForm) {
+    inpageDemoForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('demoName').value.trim();
+      const residential = document.getElementById('demoResidential').value.trim();
+      const houses = document.getElementById('demoHouses').value.trim();
+      const role = document.getElementById('demoRole').value;
+      const phone = document.getElementById('demoPhone').value.trim();
+      const notes = document.getElementById('demoNotes') ? document.getElementById('demoNotes').value.trim() : '';
+
+      const message = `¡Hola Nevora Software! Me interesa agendar una presentación de Zentary 2.0 para nuestra comunidad.\n\n👤 Nombre: ${name}\n🏢 Residencial: ${residential}\n💼 Rol: ${role}\n🔢 N° Viviendas: ${houses}\n📱 Teléfono: ${phone}${notes ? `\n📝 Requerimiento: ${notes}` : ''}`;
+      const encodedMsg = encodeURIComponent(message);
+
+      const whatsappUrl = `https://wa.me/50376000000?text=${encodedMsg}`;
+      window.open(whatsappUrl, '_blank');
+      alert('¡Gracias! Te estamos redirigiendo a WhatsApp con el equipo comercial de Nevora Software para confirmar fecha y hora de la presentación.');
+    });
+  }
+
+  // 7. Modal Demo Request
   const demoModal = document.getElementById('demoModal');
   const openModalButtons = document.querySelectorAll('[data-open-demo]');
   const closeModalBtn = document.getElementById('closeModalBtn');
@@ -104,11 +146,11 @@ document.addEventListener('DOMContentLoaded', () => {
   openModalButtons.forEach((btn) => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      demoModal.classList.add('active');
+      if (demoModal) demoModal.classList.add('active');
     });
   });
 
-  if (closeModalBtn) {
+  if (closeModalBtn && demoModal) {
     closeModalBtn.addEventListener('click', () => {
       demoModal.classList.remove('active');
     });
@@ -133,7 +175,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const message = `¡Hola Nevora Software! Me interesa agendar una demostración en vivo de Zentary 2.0 para nuestra comunidad.\n\n👤 Contacto: ${name}\n🏡 Residencial: ${residential}\n🔢 Número de casas: ${houses}\n📱 Teléfono: ${phone}`;
       const encodedMsg = encodeURIComponent(message);
 
-      // Open WhatsApp to Nevora Software official line (+503 7600 0000 / El Salvador)
       const whatsappUrl = `https://wa.me/50376000000?text=${encodedMsg}`;
       window.open(whatsappUrl, '_blank');
 

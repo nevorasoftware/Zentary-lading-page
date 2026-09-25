@@ -6,11 +6,11 @@
   <title>Zentary 2.0 | El Sistema Operativo Digital de Comunidades Residenciales</title>
   
   <!-- SEO & Social Meta Tags -->
-  <meta name="description" content="Zentary 2.0 de Nevora Software: Plataforma SaaS multi-tenant integral para control de accesos con QR dinámico, garita digital para tablet, gestión de amenidades, mora automática y comunicación para residenciales en El Salvador y Centroamérica.">
-  <meta name="keywords" content="Zentary, control de acceso residencial, software para condominios, garita digital, QR dinamico El Salvador, administracion residencial, Nevora Software">
+  <meta name="description" content="Zentary 2.0 de Nevora Software: Plataforma SaaS integral para control de accesos con QR Dinámico, garita táctil digital para tablet, gestión de amenidades, control de mora y comunicación vecinal en El Salvador y Centroamérica.">
+  <meta name="keywords" content="Zentary, control de acceso residencial, software para condominios, garita digital, QR Dinámico El Salvador, administracion residencial, control de mora, Nevora Software">
   <meta name="author" content="Nevora Software">
   <meta property="og:title" content="Zentary 2.0 — El Sistema Operativo Digital de Comunidades Residenciales">
-  <meta property="og:description" content="Control de acceso con QR dinámico criptográfico, garita digital en tablet, finanzas con mora automática y app de residentes.">
+  <meta property="og:description" content="Control de acceso con QR Dinámico, garita digital en tablet, finanzas con control de mora y app móvil para residentes.">
   <meta property="og:type" content="website">
   
   <!-- Google Fonts: Outfit & Inter -->
@@ -26,11 +26,7 @@
   <header class="navbar" id="mainNavbar">
     <div class="container nav-container">
       <a href="#" class="brand-logo" aria-label="Zentary 2.0 Inicio">
-        <div class="logo-symbol">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-          </svg>
-        </div>
+        <img src="assets/logo.png" alt="Logo Zentary" class="brand-logo-img">
         <span>ZENTARY</span>
         <span class="brand-version">2.0</span>
       </a>
@@ -39,23 +35,22 @@
         <ul class="nav-links">
           <li><a href="#plataformas" class="nav-link">Plataformas</a></li>
           <li><a href="#capacidades" class="nav-link">Capacidades</a></li>
-          <li><a href="#seguridad" class="nav-link">Seguridad & QR</a></li>
           <li><a href="#calculadora" class="nav-link">Calculadora</a></li>
-          <li><a href="#planes" class="nav-link">Planes</a></li>
+          <li><a href="#demo" class="nav-link">Solicitar Demo</a></li>
           <li><a href="#faq" class="nav-link">FAQ</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions">
-        <a href="#contacto" class="btn btn-secondary" data-open-demo>Iniciar Sesión</a>
-        <a href="#demo" class="btn btn-primary" data-open-demo>
+        <a href="http://localhost:5173" target="_blank" class="btn btn-secondary">Acceso Admin</a>
+        <a href="#demo" class="btn btn-primary">
           <span>Solicitar Demo</span>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <polyline points="12 5 19 12 12 19"></polyline>
           </svg>
         </a>
-        <button class="mobile-menu-btn" aria-label="Abrir menú de navegación" data-open-demo>
+        <button class="mobile-menu-btn" aria-label="Abrir menú de navegación" id="mobileMenuBtn">
           ☰
         </button>
       </div>
@@ -68,7 +63,7 @@
       <div class="container hero-content">
         <div class="badge-pill">
           <span class="pulse-dot"></span>
-          <span>Plataforma SaaS Multi-Tenant · Nevora Software</span>
+          <span>Plataforma SaaS Residencial · Nevora Software</span>
         </div>
 
         <h1 class="hero-title">
@@ -76,16 +71,16 @@
         </h1>
 
         <p class="hero-subtitle">
-          Zentary 2.0 unifica control de accesos con <strong>QR dinámico criptográfico</strong>, garita táctil ultra rápida, reservas de amenidades, cobranza con mora automática y comunicación vecinal en una sola plataforma SaaS para Centroamérica.
+          Zentary 2.0 unifica control de accesos con <strong>QR Dinámico</strong>, garita táctil ultra rápida, reservas de amenidades, <strong>control de mora</strong> y comunicación vecinal en una sola plataforma moderna, accesible y elegante para Centroamérica.
         </p>
 
         <div class="hero-ctas">
-          <button class="btn btn-primary" data-open-demo style="padding: 14px 28px; font-size: 1.05rem;">
-            <span>Agendar Demostración en Vivo</span>
+          <a href="#demo" class="btn btn-primary" style="padding: 14px 28px; font-size: 1.05rem;">
+            <span>Solicitar Demostración o Presentación</span>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
-          </button>
+          </a>
           <a href="#plataformas" class="btn btn-secondary" style="padding: 14px 24px; font-size: 1.05rem;">
             <span>Conocer las 3 Plataformas</span>
           </a>
@@ -102,8 +97,8 @@
             <span class="stat-label">Libre de hardware propietario</span>
           </div>
           <div class="stat-item">
-            <span class="stat-value text-gradient-cyan">HMAC-256</span>
-            <span class="stat-label">QR dinámico criptográfico</span>
+            <span class="stat-value text-gradient-cyan">QR Dinámico</span>
+            <span class="stat-label">Pases seguros anti-captura</span>
           </div>
           <div class="stat-item">
             <span class="stat-value text-gradient-indigo">Multi-Tenant</span>
@@ -153,15 +148,15 @@
                 <div class="feature-check-item">
                   <div class="check-icon">✓</div>
                   <div>
-                    <div class="check-title">Control de Permanencia & Alertas de Sobretiempo</div>
-                    <div class="check-desc">Cronómetro en tiempo real de cada visitante dentro de la comunidad con alerta visual si excede la hora autorizada.</div>
+                    <div class="check-title">Estado de Permanencia en Tiempo Real</div>
+                    <div class="check-desc">Conoce en todo momento quién se encuentra dentro de la residencial, facilitando el orden, control de accesos y la tranquilidad de la comunidad.</div>
                   </div>
                 </div>
                 <div class="feature-check-item">
                   <div class="check-icon">✓</div>
                   <div>
                     <div class="check-title">Registro de Salida Inmediata en 1 Tap</div>
-                    <div class="check-desc">Cierre de visita con cálculo automático de duración y liberación de plazas sin esperas.</div>
+                    <div class="check-desc">Cierre de visita con actualización instantánea del estado de ocupación y liberación de plazas sin demoras.</div>
                   </div>
                 </div>
                 <div class="feature-check-item">
@@ -183,10 +178,10 @@
               <div class="mockup-body">
                 <div class="garita-live-mock">
                   <div class="garita-stat-badge">
-                    <div class="overstay-alert">
-                      <span>⚠️ VISITANTE EXCEDIDO</span>
+                    <div class="overstay-alert" style="background: rgba(24, 119, 242, 0.2); color: var(--color-primary); border-color: rgba(24, 119, 242, 0.3);">
+                      <span>🛡️ ESTADO DE PERMANENCIA: ACTIVO</span>
                     </div>
-                    <div class="timer-pill" id="overstayTimer">02:18:31</div>
+                    <div class="timer-pill" id="overstayTimer">01:42:15</div>
                   </div>
 
                   <div class="garita-pass-card">
@@ -200,10 +195,10 @@
                     </button>
                   </div>
 
-                  <div class="garita-pass-card" style="border-left: 3px solid var(--primary-cyan);">
+                  <div class="garita-pass-card" style="border-left: 3px solid var(--color-primary);">
                     <div class="visitor-info">
                       <div style="display: flex; gap: 8px; align-items: center;">
-                        <span style="font-size: 0.75rem; background: rgba(6,182,212,0.2); color: var(--primary-cyan); padding: 2px 6px; border-radius: 4px; font-weight: 700;">LLEGANDO</span>
+                        <span style="font-size: 0.75rem; background: rgba(24,119,242,0.2); color: var(--color-primary); padding: 2px 6px; border-radius: 4px; font-weight: 700;">LLEGANDO</span>
                         <h4>Jonathan Girón (Residente)</h4>
                       </div>
                       <p>Casa #125 · Honda Civic Negro (P 312-880)</p>
@@ -227,7 +222,7 @@
                 La comunidad completa en la palma de tu mano
               </h3>
               <p style="color: var(--text-secondary); margin-bottom: 24px;">
-                Los residentes generan pases con QR dinámico para WhatsApp, reservan la piscina o el salón, pagan cuotas con Wompi y reciben notificaciones push en tiempo real.
+                Los residentes generan pases con QR Dinámico para WhatsApp, reservan la piscina o el salón, pagan cuotas con Wompi y reciben notificaciones inmediatas.
               </p>
               
               <div class="platform-features">
@@ -284,8 +279,8 @@
                       <rect x="40" y="75" width="15" height="15"/>
                     </svg>
                   </div>
-                  <div style="font-size: 0.8rem; color: #10b981; font-weight: 600;">🔒 FIRMADO CRIPTOGRÁFICAMENTE (HMAC-SHA256)</div>
-                  <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Expira en 14 minutos · Uso único</p>
+                  <div style="font-size: 0.8rem; color: #10b981; font-weight: 700;">🔒 QR DINÁMICO ACTIVO · CÓDIGO ROTATIVO</div>
+                  <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Expira en 15 minutos · Acceso de un solo uso</p>
                   
                   <div style="margin-top: 14px;">
                     <button class="btn btn-whatsapp" style="width: 100%; font-size: 0.9rem;" onclick="alert('Enlace del pase copiado para WhatsApp.')">
@@ -307,15 +302,15 @@
                 Mando central, finanzas y auditoría inmutable
               </h3>
               <p style="color: var(--text-secondary); margin-bottom: 24px;">
-                Control administrativo total para la junta de vecinos o empresa administradora: reportes de morosidad, trazabilidad de visitas y conciliación financiera en tiempo real.
+                Control administrativo total para la junta directiva o empresa administradora: control de mora, trazabilidad de visitas y conciliación financiera en tiempo real.
               </p>
               
               <div class="platform-features">
                 <div class="feature-check-item">
                   <div class="check-icon">✓</div>
                   <div>
-                    <div class="check-title">Motor de Mora y Cuotas Automáticas</div>
-                    <div class="check-desc">Cálculo desglosado de días de gracia, recargos configurables y emisión masiva de estados de cuenta.</div>
+                    <div class="check-title">Control de Mora y Cuotas Residenciales</div>
+                    <div class="check-desc">Cuentas claras con cálculo de días de gracia, recargos configurables y emisión instantánea de estados de cuenta.</div>
                   </div>
                 </div>
                 <div class="feature-check-item">
@@ -350,7 +345,7 @@
                   </div>
                   <div style="background: rgba(255,255,255,0.03); padding: 14px; border-radius: 8px;">
                     <div style="font-size: 0.8rem; color: var(--text-secondary);">Accesos Hoy</div>
-                    <div style="font-size: 1.5rem; font-weight: 800; color: var(--primary-cyan);">182</div>
+                    <div style="font-size: 1.5rem; font-weight: 800; color: var(--color-primary);">182</div>
                     <div style="font-size: 0.75rem; color: var(--text-muted);">28 actualmente dentro</div>
                   </div>
                 </div>
@@ -382,7 +377,7 @@
         </div>
 
         <div class="features-grid">
-          <!-- Card 1 -->
+          <!-- Card 1: QR Dinamico -->
           <article class="feature-box">
             <div class="feature-icon-wrapper">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -390,13 +385,13 @@
                 <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
               </svg>
             </div>
-            <h3>QR Dinámico Criptográfico</h3>
+            <h3>QR Dinámico</h3>
             <p>
-              Pases que caducan a los 15 minutos, con firma HMAC-SHA256 y un solo uso. Olvídate de fotos estáticas de QR compartidas indebidamente en redes.
+              Pases que se actualizan automáticamente para evitar que sean reenviados como capturas de pantalla. Tu visita accede de forma ágil, segura y sin fricciones.
             </p>
           </article>
 
-          <!-- Card 2 -->
+          <!-- Card 2: Estado de Permanencia -->
           <article class="feature-box">
             <div class="feature-icon-wrapper" style="background: rgba(16, 185, 129, 0.15); color: #10b981;">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -404,15 +399,15 @@
                 <polyline points="12 6 12 12 16 14"></polyline>
               </svg>
             </div>
-            <h3>Control de Permanencia</h3>
+            <h3>Estado de Permanencia</h3>
             <p>
-              Monitorea en tiempo real quién está dentro de la residencial, hora de ingreso y alertas automáticas a garita si un visitante excede su límite pactado.
+              Conoce en todo momento quién se encuentra dentro de la residencial, hora de ingreso y destino, brindando máxima visibilidad y tranquilidad a las familias.
             </p>
           </article>
 
-          <!-- Card 3 -->
+          <!-- Card 3: Modulo Delivery -->
           <article class="feature-box">
-            <div class="feature-icon-wrapper" style="background: rgba(6, 182, 212, 0.15); color: #06b6d4;">
+            <div class="feature-icon-wrapper" style="background: rgba(24, 119, 242, 0.15); color: var(--color-primary);">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="1" y="3" width="15" height="13"></rect>
                 <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
@@ -426,9 +421,9 @@
             </p>
           </article>
 
-          <!-- Card 4 -->
+          <!-- Card 4: Servicios Recurrentes -->
           <article class="feature-box">
-            <div class="feature-icon-wrapper" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;">
+            <div class="feature-icon-wrapper" style="background: rgba(255, 207, 54, 0.15); color: var(--accent-gold);">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                 <circle cx="9" cy="7" r="4"></circle>
@@ -438,25 +433,25 @@
             </div>
             <h3>Servicios Recurrentes</h3>
             <p>
-              Autoriza a jardineros, empleadas domésticas y microbuses escolares con franjas horarias y días de la semana específicos para ingreso controlado.
+              Autoriza a jardineros, empleadas domésticas y microbuses escolares con franjas horarias y días específicos para un acceso cómodo y controlado.
             </p>
           </article>
 
-          <!-- Card 5 -->
+          <!-- Card 5: Control de Mora -->
           <article class="feature-box">
-            <div class="feature-icon-wrapper" style="background: rgba(139, 92, 246, 0.15); color: #a78bfa;">
+            <div class="feature-icon-wrapper" style="background: rgba(98, 3, 255, 0.15); color: var(--color-secondary);">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <line x1="12" y1="1" x2="12" y2="23"></line>
                 <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
               </svg>
             </div>
-            <h3>Cuotas & Mora Automática</h3>
+            <h3>Control de Mora & Finanzas</h3>
             <p>
-              Cuenta corriente por vivienda, recargos automáticos tras días de gracia, carga de comprobantes y pagos con tarjeta de crédito vía Wompi 3DS.
+              Cuenta corriente por vivienda, cálculo transparente de cuotas y recargos con días de gracia, carga de comprobantes y pagos ágiles con Wompi.
             </p>
           </article>
 
-          <!-- Card 6 -->
+          <!-- Card 6: Modo Amigo -->
           <article class="feature-box">
             <div class="feature-icon-wrapper" style="background: rgba(244, 63, 94, 0.15); color: #fb7185;">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -465,7 +460,7 @@
             </div>
             <h3>Modo Amigo para Adultos Mayores</h3>
             <p>
-              Una pantalla simplificada diseñada con respeto y empatía: invita a familiares, reporta problemas o avisa tu llegada en 2 toques, sin frustración tecnológica.
+              Una pantalla simplificada diseñada con empatía: invita familiares, reporta novedades o avisa tu llegada en 2 toques, sin menús confusos.
             </p>
           </article>
         </div>
@@ -505,85 +500,136 @@
             </div>
             <div class="result-row">
               <span class="result-title">Velocidad de paso en garita</span>
-              <span class="result-metric" id="speedMetric" style="color: var(--primary-cyan);">96.5% más rápido</span>
+              <span class="result-metric" id="speedMetric" style="color: var(--color-primary);">96.5% más rápido</span>
             </div>
-            <button class="btn btn-primary" data-open-demo style="width: 100%; margin-top: 10px;">
+            <a href="#demo" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
               Solicitar Propuesta para mi Residencial
-            </button>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section class="pricing-section" id="planes">
+    <!-- Solicitar Demo o Presentación Section (Reemplazo Oficial de Planes) -->
+    <section class="demo-section" id="demo">
       <div class="container">
         <div class="section-header">
-          <span class="badge-pill">Planes Comerciales</span>
-          <h2 class="section-title">Inversión Transparente y Escalable</h2>
+          <span class="badge-pill">Presentación en Vivo</span>
+          <h2 class="section-title">Solicita una Demostración Personalizada</h2>
           <p class="section-description">
-            Sin costos sorpresa ni requerimiento de hardware propietario costoso. Escoge el plan ideal para tu comunidad.
+            Descubre cómo Zentary 2.0 transforma la seguridad y administración de tu residencial o condominio en una sesión guiada paso a paso.
           </p>
         </div>
 
-        <div class="pricing-grid">
-          <!-- Plan Starter -->
-          <div class="pricing-card">
+        <div class="demo-grid">
+          <!-- Left: Info & Perks Card -->
+          <div class="demo-info-card">
             <div>
-              <div class="plan-name">Starter</div>
-              <div class="plan-desc">Para residenciales pequeñas o condominios que inician su digitalización.</div>
-              <div class="plan-price">
-                <span>$89</span>
-                <span class="plan-period">/ mes</span>
-              </div>
-              <ul class="plan-perks">
-                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Hasta 50 viviendas</li>
-                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Control de accesos & QR Dinámico</li>
-                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 1 Garita en tablet (PWA)</li>
-                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> App móvil para residentes</li>
+              <span class="badge-pill" style="margin-bottom: 16px;">¿Qué verás en la presentación?</span>
+              <h3 style="font-family: var(--font-heading); font-size: 1.85rem; font-weight: 800; margin-bottom: 16px;">
+                Un recorrido práctico para tu directiva o administración
+              </h3>
+              <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px;">
+                Te mostraremos el funcionamiento real de la garita en tablet, la app para residentes y el panel administrativo web con casos reales adaptados a tu comunidad.
+              </p>
+
+              <ul class="demo-perks-list">
+                <li class="demo-perk-item">
+                  <div class="demo-perk-icon">📱</div>
+                  <div>
+                    <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 4px;">Demostración Práctica en Vivo</h4>
+                    <p style="font-size: 0.88rem; color: var(--text-secondary);">Prueba la emisión de QR Dinámico y la rapidez del escaneo en garita en tiempo real.</p>
+                  </div>
+                </li>
+                <li class="demo-perk-item">
+                  <div class="demo-perk-icon">🛡️</div>
+                  <div>
+                    <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 4px;">Evaluación de tu Comunidad</h4>
+                    <p style="font-size: 0.88rem; color: var(--text-secondary);">Analizamos la cantidad de accesos, número de viviendas y garitas para sugerirte la mejor configuración.</p>
+                  </div>
+                </li>
+                <li class="demo-perk-item">
+                  <div class="demo-perk-icon">💼</div>
+                  <div>
+                    <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 4px;">Propuesta a la Medida</h4>
+                    <p style="font-size: 0.88rem; color: var(--text-secondary);">Recibe una propuesta ajustada al tamaño de tu residencial, sin contratos forzosos ni compras de equipo innecesario.</p>
+                  </div>
+                </li>
+                <li class="demo-perk-item">
+                  <div class="demo-perk-icon">🚀</div>
+                  <div>
+                    <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 4px;">Puesta en Marcha Acompañada</h4>
+                    <p style="font-size: 0.88rem; color: var(--text-secondary);">Capacitación a guardias de seguridad, inducción a residentes y soporte directo por Nevora Software.</p>
+                  </div>
+                </li>
               </ul>
             </div>
-            <button class="btn btn-secondary" data-open-demo style="width: 100%;">Elegir Starter</button>
+
+            <div style="background: rgba(24, 119, 242, 0.08); border: 1px solid rgba(24, 119, 242, 0.25); border-radius: 12px; padding: 18px; display: flex; align-items: center; gap: 14px;">
+              <span style="font-size: 1.8rem;">⚡</span>
+              <div style="font-size: 0.88rem; color: var(--text-secondary);">
+                ¿Prefieres conversar directamente? Escríbenos a nuestro <a href="https://wa.me/50376000000?text=Hola,%20me%20gustar%C3%ADa%20solicitar%20una%20presentaci%C3%B3n%20de%20Zentary%202.0" target="_blank" style="color: var(--accent-gold); font-weight: 700; text-decoration: underline;">WhatsApp oficial de Nevora Software</a>.
+              </div>
+            </div>
           </div>
 
-          <!-- Plan Pro (Featured) -->
-          <div class="pricing-card featured">
-            <span class="popular-ribbon">MÁS POPULAR</span>
-            <div>
-              <div class="plan-name">Pro</div>
-              <div class="plan-desc">El sistema operativo completo para comunidades medianas y grandes.</div>
-              <div class="plan-price">
-                <span style="color: var(--primary-cyan);">$169</span>
-                <span class="plan-period">/ mes</span>
-              </div>
-              <ul class="plan-perks">
-                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Hasta 200 viviendas</li>
-                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Control de Permanencia & Alertas</li>
-                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Multi-Garitas (Principal + Norte/Sur)</li>
-                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Cuotas de mantenimiento & Mora auto</li>
-                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Reservas de amenidades con Wompi</li>
-                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Modo Amigo para adultos mayores</li>
-              </ul>
-            </div>
-            <button class="btn btn-primary" data-open-demo style="width: 100%;">Elegir Plan Pro</button>
-          </div>
+          <!-- Right: Interactive Demo Request Form -->
+          <div class="demo-form-card">
+            <h3 style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; margin-bottom: 8px;">
+              Agenda tu presentación personalizada
+            </h3>
+            <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 24px;">
+              Completa los datos de tu comunidad y coordinaremos fecha y hora al instante:
+            </p>
 
-          <!-- Plan Enterprise -->
-          <div class="pricing-card">
-            <div>
-              <div class="plan-name">Enterprise</div>
-              <div class="plan-desc">Para urbanizaciones masivas, macro-condominios o administradoras de múltiples residenciales.</div>
-              <div class="plan-price">
-                <span>A Medida</span>
+            <form id="inpageDemoForm">
+              <div class="form-group">
+                <label for="demoName">Nombre y Apellido</label>
+                <input type="text" id="demoName" class="form-control" placeholder="Ej. Ing. Juan Martínez" required>
               </div>
-              <ul class="plan-perks">
-                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Viviendas ilimitadas</li>
-                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Garitas ilimitadas</li>
-                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Auditoría forense avanzada y reportes PDF</li>
-                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Soporte prioritario 24/7 y SLA garantizado</li>
-              </ul>
-            </div>
-            <button class="btn btn-secondary" data-open-demo style="width: 100%;">Contactar Enterprise</button>
+
+              <div class="form-group">
+                <label for="demoResidential">Nombre de la Residencial o Condominio</label>
+                <input type="text" id="demoResidential" class="form-control" placeholder="Ej. Residencial Quintas del Sol" required>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+                <div class="form-group">
+                  <label for="demoHouses">Número de Viviendas</label>
+                  <input type="number" id="demoHouses" class="form-control" placeholder="Ej. 150" min="5" required>
+                </div>
+                <div class="form-group">
+                  <label for="demoRole">Tu Rol / Cargo</label>
+                  <select id="demoRole" class="form-control" style="background-color: #0A0F1F; color: #fff;">
+                    <option value="Junta Directiva">Junta Directiva</option>
+                    <option value="Administrador">Administrador(a)</option>
+                    <option value="Comité de Seguridad">Comité de Seguridad</option>
+                    <option value="Residente Propietario">Residente Propietario</option>
+                    <option value="Empresa de Seguridad">Empresa de Seguridad</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="demoPhone">Teléfono / WhatsApp de Contacto</label>
+                <input type="tel" id="demoPhone" class="form-control" placeholder="Ej. +503 7123 4567" required>
+              </div>
+
+              <div class="form-group">
+                <label for="demoNotes">¿Algún requerimiento especial? (Opcional)</label>
+                <input type="text" id="demoNotes" class="form-control" placeholder="Ej. Acceso en horas pico, control de cuotas...">
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px; font-size: 1.05rem; margin-top: 8px;">
+                <span>Solicitar Presentación en Vivo</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </button>
+              <div style="text-align: center; margin-top: 12px; font-size: 0.8rem; color: var(--text-muted);">
+                🔒 Información confidencial. Sin spam ni llamadas molestas.
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -603,7 +649,7 @@
             <span class="faq-chevron">▼</span>
           </button>
           <div class="faq-answer">
-            No. El residente comparte la invitación por WhatsApp y el visitante abre un enlace web seguro donde visualiza su autorización y pase QR. Funciona en cualquier navegador de smartphone al instante.
+            No. El residente comparte la invitación por WhatsApp y el visitante abre un enlace web seguro donde visualiza su pase con QR Dinámico. Funciona en cualquier navegador de smartphone al instante.
           </div>
         </div>
 
@@ -613,7 +659,7 @@
             <span class="faq-chevron">▼</span>
           </button>
           <div class="faq-answer">
-            No. Zentary opera en tablets estándar (iPad o Android) y celulares. El vigilante utiliza la cámara integrada de la tablet para validar el pase en menos de 5 segundos. Puede integrarse a plumas existentes si la residencial lo desea.
+            No. Zentary opera en tablets estándar (iPad o Android) y celulares. El vigilante utiliza la cámara integrada de la tablet para validar el pase en menos de 5 segundos. Puede integrarse a plumas automáticas si la residencial lo desea.
           </div>
         </div>
 
@@ -623,7 +669,7 @@
             <span class="faq-chevron">▼</span>
           </button>
           <div class="faq-answer">
-            La interfaz de garita cuenta con tolerancia offline: almacena en caché las visitas esperadas del turno, valida tokens localmente de forma segura y sincroniza los registros en cuanto la conexión se restablece.
+            La interfaz de garita cuenta con tolerancia offline: almacena en caché las visitas del turno, valida tokens localmente de forma segura y sincroniza los registros en cuanto la conexión se restablece.
           </div>
         </div>
 
@@ -640,17 +686,17 @@
     </section>
 
     <!-- Final CTA Banner -->
-    <section class="cta-banner-section" id="demo">
+    <section class="cta-banner-section">
       <div class="container">
         <div class="cta-banner">
           <h2>Moderniza la seguridad y administración de tu comunidad hoy</h2>
           <p>Únete a las residenciales en El Salvador y Centroamérica que ya operan con eficiencia digital.</p>
-          <button class="btn btn-primary" data-open-demo style="padding: 16px 36px; font-size: 1.1rem;">
-            <span>Solicitar Demostración Gratuita</span>
+          <a href="#demo" class="btn btn-primary" style="padding: 16px 36px; font-size: 1.1rem;">
+            <span>Agendar Presentación en Vivo</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
-          </button>
+          </a>
         </div>
       </div>
     </section>
@@ -662,11 +708,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <div class="brand-logo">
-            <div class="logo-symbol">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-              </svg>
-            </div>
+            <img src="assets/logo.png" alt="Logo Zentary" class="brand-logo-img">
             <span>ZENTARY</span>
             <span class="brand-version">2.0</span>
           </div>
@@ -688,8 +730,8 @@
         <div class="footer-column">
           <h4>Seguridad</h4>
           <ul class="footer-links">
-            <li><a href="#capacidades">QR Criptográfico</a></li>
-            <li><a href="#capacidades">Control Permanencia</a></li>
+            <li><a href="#capacidades">QR Dinámico</a></li>
+            <li><a href="#capacidades">Estado de Permanencia</a></li>
             <li><a href="#capacidades">Multi-Tenancy</a></li>
             <li><a href="#capacidades">Auditoría Forense</a></li>
           </ul>
@@ -699,8 +741,8 @@
           <h4>Nevora Software</h4>
           <ul class="footer-links">
             <li><a href="https://wa.me/50376000000" target="_blank">WhatsApp Comercial</a></li>
-            <li><a href="#contacto" data-open-demo>Soporte Técnico</a></li>
-            <li><a href="#contacto" data-open-demo>Términos y Privacidad</a></li>
+            <li><a href="#demo">Solicitar Demo</a></li>
+            <li><a href="http://localhost:5173" target="_blank">Panel de Administración</a></li>
           </ul>
         </div>
       </div>
