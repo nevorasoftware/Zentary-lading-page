@@ -1,7 +1,7 @@
-# 🌐 Zentary 2.0 — Landing Page Oficial
+# 🌐 Zentary — Landing Page Oficial
 
 **Empresa:** Nevora Software  
-**Producto:** Zentary 2.0 (SaaS Multi-Tenant)  
+**Producto:** Zentary (SaaS Multi-Tenant)  
 **Tecnologías:** HTML5 Semántico + CSS3 Vanilla (Tokens & Glassmorphism) + JavaScript ES6 Moderno
 
 ---
@@ -25,7 +25,7 @@ npx live-server
 
 ## 🎨 Características Implementadas en la Landing Page
 
-1. **Alineación con Zentary 2.0**:
+1. **Alineación con Zentary**:
    - Mensaje central: *"El Sistema Operativo Digital de tu Comunidad Residencial"*.
    - Presentación de las 3 Plataformas interconectadas: **Garita Tablet (PWA)**, **Residente Mobile (iOS/Android)** y **Administración Web**.
 2. **Interactividad**:

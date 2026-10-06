@@ -1,5 +1,5 @@
 /* ==============================================================================
-   ZENTARY 2.0 - INTERACTIVE SCRIPTS & LOGIC
+   ZENTARY - INTERACTIVE SCRIPTS & LOGIC
    Nevora Software - El Sistema Operativo Digital de Comunidades Residenciales
    ============================================================================== */
 
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const phone = document.getElementById('demoPhone').value.trim();
       const notes = document.getElementById('demoNotes') ? document.getElementById('demoNotes').value.trim() : '';
 
-      const message = `¡Hola Nevora Software! Me interesa agendar una presentación de Zentary 2.0 para nuestra comunidad.\n\n👤 Nombre: ${name}\n🏢 Residencial: ${residential}\n💼 Rol: ${role}\n🔢 N° Viviendas: ${houses}\n📱 Teléfono: ${phone}${notes ? `\n📝 Requerimiento: ${notes}` : ''}`;
+      const message = `¡Hola Nevora Software! Me interesa agendar una presentación de Zentary para nuestra comunidad.\n\n👤 Nombre: ${name}\n🏢 Residencial: ${residential}\n💼 Rol: ${role}\n🔢 N° Viviendas: ${houses}\n📱 Teléfono: ${phone}${notes ? `\n📝 Requerimiento: ${notes}` : ''}`;
       const encodedMsg = encodeURIComponent(message);
 
       const whatsappUrl = `https://wa.me/50376000000?text=${encodedMsg}`;
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const houses = document.getElementById('clientHouses').value.trim();
       const phone = document.getElementById('clientPhone').value.trim();
 
-      const message = `¡Hola Nevora Software! Me interesa agendar una demostración en vivo de Zentary 2.0 para nuestra comunidad.\n\n👤 Contacto: ${name}\n🏡 Residencial: ${residential}\n🔢 Número de casas: ${houses}\n📱 Teléfono: ${phone}`;
+      const message = `¡Hola Nevora Software! Me interesa agendar una demostración en vivo de Zentary para nuestra comunidad.\n\n👤 Contacto: ${name}\n🏡 Residencial: ${residential}\n🔢 Número de casas: ${houses}\n📱 Teléfono: ${phone}`;
       const encodedMsg = encodeURIComponent(message);
 
       const whatsappUrl = `https://wa.me/50376000000?text=${encodedMsg}`;
